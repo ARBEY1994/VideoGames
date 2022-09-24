@@ -1,0 +1,31 @@
+.search {
+  font-weight: bold;
+  padding: 4px 8px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 13px;
+
+  border-color: #afa59f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative;
+  background: linear-gradient(to right, rgb(124, 119, 115), rgb(223, 223, 29));
+}
+.search:hover {
+  background: #77706e;
+  color: beige;
+  border-color: #77706e;
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 200px #77706e;
+}
+.allSearch input {
+  background: none;
+  outline: 0;
+  color: aliceblue;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.allSearch {
+  position: relative;
+  right: 37%;
+}

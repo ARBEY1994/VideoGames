@@ -1,0 +1,144 @@
+.fondo {
+  height: 150%;
+  width: 100%;
+  background-image: url("./imagenes/videojuegos_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  animation: movimiento 40s infinite linear alternate;
+}
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+.homeCard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-column: 6 / 9;
+  grid-row: 7 / 14;
+  margin-left: 70px;
+  margin-right: auto;
+  border: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 0.5em 0em;
+
+  margin: 0 0 0 -20em;
+  position: relative;
+  left: 23%;
+  top: 5%;
+}
+
+.buttonLoad {
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 20px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-color: #afa59f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  background: linear-gradient(to right, rgb(124, 119, 115), rgb(223, 223, 29));
+  position: relative;
+
+  right: 0%;
+}
+.buttonLoad:hover {
+  background: #77706e;
+  color: beige;
+  border-color: #77706e;
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}
+.select {
+  position: relative;
+
+  right: 26%;
+}
+.efectselect {
+  grid-column: 1 / 3;
+  grid-row: 5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 1px;
+  background: linear-gradient(100deg, #77706e, beige, rgb(134, 134, 115) 75%);
+}
+.efectselect:hover {
+  background: linear-gradient(100deg, #77706e, rgb(199, 199, 18) 50%, #77706e);
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}
+.efectselect1 {
+  grid-column: 1 / 3;
+  grid-row: 5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 1px;
+  background: linear-gradient(100deg, #77706e, beige, rgb(134, 134, 115) 75%);
+}
+.efectselect1:hover {
+  background: linear-gradient(100deg, #77706e, rgb(199, 199, 18) 50%, #77706e);
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}
+.efectselect2 {
+  grid-column: 1 / 3;
+  grid-row: 5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 1px;
+  background: linear-gradient(100deg, #77706e, beige, rgb(134, 134, 115) 75%);
+}
+.efectselect2:hover {
+  background: linear-gradient(100deg, #77706e, rgb(199, 199, 18) 50%, #77706e);
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}
+
+.ubicacioncreate {
+  position: relative;
+  left: 40%;
+}
+.createvideo {
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 20px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-color: #afa59f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative;
+  background: linear-gradient(to right, rgb(124, 119, 115), rgb(223, 223, 29));
+}
+.createvideo:hover {
+  background: #77706e;
+  color: beige;
+  border-color: #77706e;
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}
+.imagenl {
+  position: relative;
+  left: 30%;
+}

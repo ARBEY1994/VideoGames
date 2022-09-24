@@ -1,0 +1,29 @@
+.paginado {
+  display: flex;
+  grid-column: 3 / 9;
+  grid-row: 2 / 14;
+  margin-left: auto;
+  margin-right: auto;
+  border: 20px;
+  position: relative;
+}
+.botonPaginado {
+  display: inline-block;
+  font-weight: bold;
+  padding: 4px 3px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-color: #afa59f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative;
+  background: linear-gradient(to right, rgb(124, 119, 115), rgb(223, 223, 29));
+}
+.botonPaginado:hover {
+  background: #77706e;
+  color: beige;
+  border-color: #77706e;
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}

@@ -1,0 +1,54 @@
+.detail {
+  width: 100%;
+  height: 100%;
+  background-image: url("./imagenes/yyyyy.jpg");
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  animation: movimiento 40s infinite linear alternate;
+}
+.fondo2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  color: aliceblue;
+  padding: 10px;
+  font-size: 70%;
+  text-align: center;
+  box-shadow: 0 0 20px #77706e, 0 0 60px #77706e, 0 0 20px #77706e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.botondetail {
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 20px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-color: #afa59f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative;
+  background: linear-gradient(to right, rgb(124, 119, 115), rgb(223, 223, 29));
+}
+.botondetail:hover {
+  background: #77706e;
+  color: beige;
+  border-color: #77706e;
+  box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
+}
+.imagend img {
+  height: 100%;
+  width: 100%;
+  border-color: #77706e;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #77706e, 0 0 60px #77706e, 0 0 20px #77706e;
+}
