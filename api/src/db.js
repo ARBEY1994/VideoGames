@@ -20,6 +20,7 @@ let sequelize =
         dialectOptions: {
           ssl: {
             require: true,
+            // Ref.: https://github.com/brianc/node-postgres/issues/2009
             rejectUnauthorized: false,
           },
           keepAlive: true,
@@ -27,11 +28,8 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`,
-        {
-          logging: false,
-          native: false,
-        }
+        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/development`,
+        { logging: false, native: false }
       );
 // const sequelize = new Sequelize(
 //   `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`,
