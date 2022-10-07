@@ -5,8 +5,8 @@ const path = require("path");
 const modelVideog = require("./models/Videogame");
 const modelGnere = require("./models/Genres");
 
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, API_KEY } = process.env;
-const apiKey = `key=${API_KEY}`;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
+
 let sequelize =
   process.env.NODE_ENV === "production"
     ? new Sequelize({
@@ -82,5 +82,4 @@ Genres.belongsToMany(Videogame, { through: "videoGame_genres" });
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
   conn: sequelize, // para importart la conexión { conn } = require('./db.js');
-  apiKey,
 };
