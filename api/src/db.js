@@ -5,17 +5,17 @@ const path = require("path");
 const modelVideog = require("./models/Videogame");
 const modelGnere = require("./models/Genres");
 
-const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
+const { DB_USER1, DB_PASSWORD1, DB_HOST1, DB_NAME1 } = process.env;
 
 let sequelize =
   process.env.NODE_ENV === "production"
     ? new Sequelize({
-        database: DB_NAME,
+        database: DB_NAME1,
         dialect: "postgres",
-        host: DB_HOST,
-        port: 5432,
-        username: DB_USER,
-        password: DB_PASSWORD,
+        host: DB_HOST1,
+        port: 5433,
+        username: DB_USER1,
+        password: DB_PASSWORD1,
         pool: {
           max: 3,
           min: 1,
@@ -32,7 +32,7 @@ let sequelize =
         ssl: true,
       })
     : new Sequelize(
-        `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/videogames`,
+        `postgres://${DB_USER1}:${DB_PASSWORD1}@${DB_HOST1}/videogames`,
         { logging: false, native: false }
       );
 // const sequelize = new Sequelize(
