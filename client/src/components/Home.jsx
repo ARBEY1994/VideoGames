@@ -19,6 +19,7 @@ import logo from "./styles/imagenes/logo.png";
 
 export default function Home() {
   const dispatch = useDispatch();
+
   const AllVideoGames = useSelector((state) => state.videoGames);
   const AllGenres = useSelector((state) => state.genres);
   const [pageCurrent, setPageCurrent] = useState(1);
@@ -26,7 +27,7 @@ export default function Home() {
   const [order, setOrder] = useState("");
   const lastIndex = pageCurrent * videoGamesByPage;
   const firstIndex = lastIndex - videoGamesByPage;
-  const currentGame = AllVideoGames.slice(firstIndex, lastIndex);
+  const currentPage = AllVideoGames.slice(firstIndex, lastIndex);
   const paginado = (pageNumber) => {
     setPageCurrent(pageNumber);
   };
@@ -60,6 +61,7 @@ export default function Home() {
     setPageCurrent(1);
     setOrder(e.target.value);
   };
+
   return (
     <div className="fondo">
       <SearchBar />
@@ -114,6 +116,7 @@ export default function Home() {
             <option value="rat-"> - Rating</option>
           </select>
         </div>
+
         <div>
           <h1>{""} </h1>
         </div>
@@ -124,8 +127,8 @@ export default function Home() {
           <h4>{""} </h4>
         </div>
         <div className="homeCard">
-          {currentGame.length > 0 ? (
-            currentGame?.map((e) => {
+          {currentPage.length > 0 ? (
+            currentPage?.map((e) => {
               return (
                 <div key={e.id}>
                   <Card

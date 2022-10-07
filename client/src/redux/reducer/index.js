@@ -102,6 +102,7 @@ function rootReducer(state = initialState, action) {
         ...state,
         videoGames: order,
       };
+
     default:
       return state;
   }

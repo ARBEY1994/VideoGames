@@ -15,11 +15,11 @@ export default function SearchBar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.length > 1) {
+    if (name.length > 0) {
       dispatch(GetByName(name));
       setName("");
     } else {
-      alert("name noy fount");
+      alert("please write something");
     }
   };
   return (

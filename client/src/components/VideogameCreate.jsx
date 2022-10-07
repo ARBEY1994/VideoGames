@@ -9,17 +9,28 @@ const validate = (input) => {
   let error = {};
   if (!input.name || typeof input.name !== "string") {
     error.name = "please type a name!";
-  } else if (!input.description || typeof input.description !== "string") {
-    error.description = "please type a description!";
-  } else if (!input.released || typeof input.released !== "string") {
+  }
+  if (
+    !input.description ||
+    typeof input.description !== "string" ||
+    input.description.charAt(100)
+  ) {
+    error.description =
+      "please write a description that is less than 100 characters!";
+  }
+  if (!input.released || typeof input.released !== "string") {
     error.released = "please write a date!";
-  } else if (!input.rating || input.rating > 10 || input.rating < 0) {
+  }
+  if (!input.rating || input.rating > 10 || input.rating < 0) {
     error.rating = "please enter a numeric value valid";
-  } else if (!input.platforms) {
+  }
+  if (!input.platforms) {
     error.platforms = "please select at least one platform";
-  } else if (!input.genres) {
+  }
+  if (!input.genres) {
     error.genres = "please select a gender";
   }
+
   return error;
 };
 export default function VideogameCreate() {
@@ -33,6 +44,7 @@ export default function VideogameCreate() {
     name: "",
     description: "",
     released: "",
+
     rating: "",
     platforms: [],
     background_image: "",
@@ -47,23 +59,18 @@ export default function VideogameCreate() {
   }, [dispatch]);
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     if (!input.name) {
-      e.preventDefault();
       return alert("please enter a name!");
-    } else if (!input.description) {
-      e.preventDefault();
-      return alert("please enter a description!");
+    } else if (!input.description || input.description.charAt(100)) {
+      return alert("please enter a valid description!");
     } else if (!input.released) {
-      e.preventDefault();
       return alert("please enter release date!");
     } else if (!input.rating || input.rating < 0 || input.rating > 10) {
-      e.preventDefault();
       return alert("please enter a valid rating!");
     } else if (!input.platforms) {
-      e.preventDefault();
       return alert("please select a platform!");
     } else if (!input.genres) {
-      e.preventDefault();
       return alert("seleccione un genero");
     } else {
       dispatch(postVideogame(input));
@@ -73,6 +80,7 @@ export default function VideogameCreate() {
         description: "",
         released: "",
         rating: "",
+
         platforms: [],
         background_image: "",
         genres: [],
@@ -165,6 +173,7 @@ export default function VideogameCreate() {
           />
           {error.description && <span> {error.description}</span>}
         </div>
+
         <div className="inputc">
           <strong>
             <label>Rating: </label>
@@ -246,7 +255,6 @@ export default function VideogameCreate() {
               ))}
             </li>
           </ul>
-          {error.genres && <span>{error.genres}</span>}
         </div>
       </form>
       <div className="moveocretae">

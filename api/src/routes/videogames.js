@@ -1,5 +1,5 @@
 const { Router } = require("express");
-
+const router = Router();
 const {
   getId,
   getAllInfo,
@@ -7,8 +7,6 @@ const {
   getDb,
 } = require("../controller/funtions");
 const { Videogame, Genres } = require("../db");
-
-const router = Router();
 
 router.get("/", async (req, res) => {
   const { name } = req.query;

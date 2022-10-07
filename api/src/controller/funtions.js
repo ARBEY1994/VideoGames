@@ -2,6 +2,7 @@ const axios = require("axios");
 require("dotenv").config();
 const { Videogame, Genres } = require("../db");
 const { API_KEY } = process.env;
+
 const getApi = async () => {
   try {
     let videogamesInfo = [];
@@ -117,6 +118,7 @@ const getIdDb = async (id) => {
 
 const getId = async (id) => {
   const DataBase = id.includes("-");
+
   if (DataBase) {
     const idDb = await getIdDb(id);
     return idDb;

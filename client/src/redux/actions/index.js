@@ -7,11 +7,12 @@ export const CREATED_OR_EXISTING = "CREATED_OR_EXISTING";
 export const GET_PLATFORMS = "GET_PLATFORMS";
 export const FILTER_BY_GENRE = "FILTER_BY_GENRE";
 export const ORDER_ASC_DES = "ORDER_ASC_DES";
+export const FILTER_BY_RATING = "FILTER_BY_RATING";
 
 export function GetVideogames() {
   return async function (dispatch) {
     try {
-      let info = await axios.get(`http://localhost:3001/videoGames`);
+      let info = await axios.get(`/videoGames`);
       return dispatch({
         type: "GET_VIDEOGAMES",
         payload: info.data,
@@ -25,7 +26,7 @@ export function GetVideogames() {
 export function GetGenres() {
   return async function (dispatch) {
     try {
-      let infoG = await axios.get(`http://localhost:3001/genres`);
+      let infoG = await axios.get(`/genres`);
       return dispatch({
         type: "GET_GENRES",
         payload: infoG.data,
@@ -39,7 +40,7 @@ export function GetGenres() {
 export function getPlatforms() {
   return async function (dispatch) {
     try {
-      let { data } = await axios.get("http://localhost:3001/platforms");
+      let { data } = await axios.get("/platforms");
       return dispatch({
         type: "GET_PLATFORMS",
         payload: data,
@@ -53,7 +54,7 @@ export function getPlatforms() {
 export function GetDetail(id) {
   return async function (dispatch) {
     try {
-      let infoId = await axios.get(`http://localhost:3001/videoGames/${id}`);
+      let infoId = await axios.get(`/videoGames/${id}`);
       return dispatch({
         type: "GET_ID",
         payload: infoId.data,
@@ -67,26 +68,20 @@ export function GetDetail(id) {
 export function GetByName(name) {
   return async function (dispatch) {
     try {
-      let { data } = await axios.get(
-        `http://localhost:3001/videoGames?name=${name}`
-      );
+      let { data } = await axios.get(`/videoGames?name=${name}`);
       return dispatch({
         type: "GET_BY_NAME",
         payload: data,
       });
     } catch (error) {
       console.log(error);
-      return dispatch({
-        type: "GET_BY_NAME",
-        payload: [],
-      });
     }
   };
 }
 
 export function postVideogame(payload) {
   return async function (dispatch) {
-    const info = await axios.post(`http://localhost:3001/videoGames`, payload);
+    const info = await axios.post(`/videoGames`, payload);
     return info;
   };
 }
