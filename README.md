@@ -201,7 +201,7 @@ Se  desarrollo un servidor en Node/Express con las siguientes rutas:
 - npm start
 - abrir en localhost
 
-<p align="right">
+<p align="center">
  
   <img height="200" src="https://media.tenor.com/RTYaIF25dDMAAAAd/mi-trabajo-aqui-ha-terminado-my-work-here-is-over.gif" />
 </p>
