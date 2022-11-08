@@ -1,7 +1,9 @@
+# Individual Project - Henry Videogames
+
 ![imag_project1](https://user-images.githubusercontent.com/91568324/200672499-685a7a5c-b85f-4ebc-996c-9feb22d9e124.jpg)
 
 
-# Individual Project - Henry Videogames
+
 
  ![Imagen2](https://user-images.githubusercontent.com/91568324/200676661-54c9c34a-aa18-4eeb-b742-aca6ec9473de.jpg)
 
