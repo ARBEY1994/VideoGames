@@ -3,10 +3,10 @@
 
 # Individual Project - Henry Videogames
 
-
+ ![Imagen2](https://user-images.githubusercontent.com/91568324/200676661-54c9c34a-aa18-4eeb-b742-aca6ec9473de.jpg)
 
 <p align="right">
-  ![Imagen2](https://user-images.githubusercontent.com/91568324/200676661-54c9c34a-aa18-4eeb-b742-aca6ec9473de.jpg)
+ 
   <img height="200" src="./videogame.png" />
 </p>
 
