@@ -185,9 +185,11 @@ Se  desarrollo un servidor en Node/Express con las siguientes rutas:
   - En una primera instancia deberán traerlos desde rawg y guardarlos en su propia base de datos y luego ya utilizarlos desde allí
   
 ## Imagenes del proyecto
-
+### Landing
 ![imagenvideogame5](https://user-images.githubusercontent.com/91568324/200674815-e2831bf3-9e41-4842-a597-66bd68898f56.png)
+### Home
 ![imagenVideogame3](https://user-images.githubusercontent.com/91568324/200674858-199b4216-ecaa-4a3b-ae06-cd4c71d0be8a.png)
+### Formulario de creacion
 ![imagenVideogames2](https://user-images.githubusercontent.com/91568324/200674895-4b332900-f42e-4800-a3ce-2c1023500695.jpg)
 
 ## Quick start
