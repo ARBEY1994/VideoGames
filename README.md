@@ -1,4 +1,5 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+![imag_project1](https://user-images.githubusercontent.com/91568324/200672499-685a7a5c-b85f-4ebc-996c-9feb22d9e124.jpg)
+
 
 # Individual Project - Henry Videogames
 
@@ -187,5 +188,11 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] __GET /genres__:
   - Obtener todos los tipos de géneros de videojuegos posibles
   - En una primera instancia deberán traerlos desde rawg y guardarlos en su propia base de datos y luego ya utilizarlos desde allí
+  
+## Imagenes del proyecto
+
+![imagenvideogame5](https://user-images.githubusercontent.com/91568324/200674815-e2831bf3-9e41-4842-a597-66bd68898f56.png)
+![imagenVideogame3](https://user-images.githubusercontent.com/91568324/200674858-199b4216-ecaa-4a3b-ae06-cd4c71d0be8a.png)
+![imagenVideogames2](https://user-images.githubusercontent.com/91568324/200674895-4b332900-f42e-4800-a3ce-2c1023500695.jpg)
 
 
