@@ -1,8 +1,14 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
 # Individual Project - Henry Videogames
 
+![imag_project1](https://user-images.githubusercontent.com/91568324/200672499-685a7a5c-b85f-4ebc-996c-9feb22d9e124.jpg)
+
+
+
+
+ ![Imagen2](https://user-images.githubusercontent.com/91568324/200676661-54c9c34a-aa18-4eeb-b742-aca6ec9473de.jpg)
+
 <p align="right">
+ 
   <img height="200" src="./videogame.png" />
 </p>
 
@@ -16,14 +22,10 @@
 
 ## Horarios y Fechas
 
-El proyecto tendrá una duración máxima de tres semanas. En el caso de que completan todas las tareas antes de dicho lapso podrán avisar a su Instructor para coordinar una fecha de presentación del trabajo (DEMO).
+El proyecto se desarrollo en tres semanas. 
 
-## Comenzando
 
- 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
- 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
 
-Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
 
 __IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
 
@@ -39,7 +41,6 @@ node -v
 npm -v
 ```
 
-__ACLARACIÓN:__ Las dependencias actuales se encuentran en las versiones que venimos trabajando durante el bootcamp.
 
 Versiones:
 
@@ -51,7 +52,6 @@ Versiones:
 
 Está permitido, __bajo su responsabilidad__, actualizar las dependencias a versiones más actuales.
 
-> __IMPORTANTE:__ Versiones mas actuales podrían presentar configuraciones diferentes respecto a las versiones en las que venimos trabajando durante el bootcamp.
 
 ## BoilerPlate
 
@@ -81,20 +81,18 @@ La idea general es crear una aplicación en la cual se puedan ver los distintos 
 
 __IMPORTANTE__: Para poder utilizar esta API externa es necesario crearse una cuenta para obtener una API Key que luego debera ser incluida en todos los request que hagamos a rawg simplemente agregando `?key={YOUR_API_KEY}` al final de cada endpoint. Agregar la clave en el archivo `.env` para que la misma no se suba al repositorio por cuestiones de seguridad y utilizarla desde allí.
 
-__IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO pueden utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados sino que deben realizarlo ustedes mismos. En particular alguno de los ordenamientos o filtrados debe si o si realizarse desde el frontend.
 
-### Únicos Endpoints/Flags que pueden utilizar
+
+### Únicos Endpoints/Flags 
 
 - GET <https://api.rawg.io/api/games>
 - GET <https://api.rawg.io/api/games?search={game}>
 - GET <https://api.rawg.io/api/genres>
 - GET <https://api.rawg.io/api/games/{id}>
 
-### Requerimientos mínimos
 
-A continuación se detallaran los requerimientos mínimos para la aprobación del proyecto individial. Aquellos que deseen agregar más funcionalidades podrán hacerlo. En cuanto al diseño visual no va a haber wireframes ni prototipos prefijados sino que tendrán libertad de hacerlo a su gusto pero tienen que aplicar los conocimientos de estilos vistos en el curso para que quede agradable a la vista.
 
-__IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
+__IMPORTANTE__:se utilizo CSS puro.
 
 #### Tecnologías necesarias
 
@@ -161,15 +159,15 @@ El modelo de la base de datos deberá tener las siguientes entidades (Aquellas p
   - ID
   - Nombre
 
-La relación entre ambas entidades debe ser de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultaneo y, a su vez, un género puede contener múltiples videojuegos distintos. Un ejemplo sería el juego `Counter Strike` pertenece a los géneros Shooter y Action al mismo tiempo. Pero a su vez existen otros videojuegos considerados como Shooter o como Action.
+La relación entre ambas entidades es de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultaneo y, a su vez, un género puede contener múltiples videojuegos distintos. Un ejemplo sería el juego `Counter Strike` pertenece a los géneros Shooter y Action al mismo tiempo. Pero a su vez existen otros videojuegos considerados como Shooter o como Action.
 
-__IMPORTANTE__: Pensar como modelar los IDs de los videojuegos en la base de datos. Existen distintas formas correctas de hacerlo pero tener en cuenta que cuando hagamos click en algun videojuego, este puede provenir de la API o de la Base de Datos por lo que cuando muestre su detalle no debería haber ambigüedad en cual se debería mostrar. Por ejemplo si en la API el videojuego `Age of Empires II: Age of Kings` tiene id = 1 y en nuestra base de datos creamos un nuevo videojuego `Age of Henry` con id = 1, ver la forma de diferenciarlos cuando querramos acceder al detalle del mismo.
+
 
 ## Backend
 
-Se debe desarrollar un servidor en Node/Express con las siguientes rutas:
+Se  desarrollo un servidor en Node/Express con las siguientes rutas:
 
-__IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y paginados brindados por la API externa, todas estas funcionalidades tienen que implementarlas ustedes.
+
 
 - [ ] __GET /videogames__:
   - Obtener un listado de los videojuegos
@@ -187,9 +185,23 @@ __IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y pagin
 - [ ] __GET /genres__:
   - Obtener todos los tipos de géneros de videojuegos posibles
   - En una primera instancia deberán traerlos desde rawg y guardarlos en su propia base de datos y luego ya utilizarlos desde allí
+  
+## Imagenes del proyecto
+### Landing
+![imagenvideogame5](https://user-images.githubusercontent.com/91568324/200674815-e2831bf3-9e41-4842-a597-66bd68898f56.png)
+### Home
+![imagenVideogame3](https://user-images.githubusercontent.com/91568324/200674858-199b4216-ecaa-4a3b-ae06-cd4c71d0be8a.png)
+### Formulario de creacion
+![imagenVideogames2](https://user-images.githubusercontent.com/91568324/200674895-4b332900-f42e-4800-a3ce-2c1023500695.jpg)
 
-## Testing
+## Quick start
+- clonar el repositorio
+- ejecutar los siguientes comandos
+- npm install
+- npm start
+- abrir en localhost
 
-- [ ] Al menos tener un componente del frontend con sus tests respectivos
-- [ ] Al menos tener una ruta del backend con sus tests respectivos
-- [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
+<p align="center">
+ 
+  <img height="200" src="https://media.tenor.com/RTYaIF25dDMAAAAd/mi-trabajo-aqui-ha-terminado-my-work-here-is-over.gif" />
+</p>
