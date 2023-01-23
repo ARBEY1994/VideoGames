@@ -9,7 +9,7 @@ import dotenv from "dotenv";
 import axios from "axios";
 dotenv.config();
 
-axios.defaults.baseURL = "https://pivideogames-production.up.railway.app/";
+axios.defaults.baseURL = "http://localhost:3001";
 
 ReactDOM.render(
   <Provider store={store}>
