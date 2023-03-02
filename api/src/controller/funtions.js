@@ -91,7 +91,7 @@ const getIDApi = async (id) => {
       };
       return info;
     } else {
-      return alert("id no fount");
+      return alert("id no fount.");
     }
   } catch (error) {
     console.log(error);
