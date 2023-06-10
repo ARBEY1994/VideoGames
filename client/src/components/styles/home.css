@@ -1,5 +1,5 @@
 .fondo {
-  height: 150%;
+  height: 228vh;
   width: 100%;
   background-image: url("./imagenes/videojuegos_1.jpg");
   background-position: center;
@@ -7,6 +7,7 @@
   background-size: cover;
   overflow: hidden;
   animation: movimiento 40s infinite linear alternate;
+  position: absolute;
 }
 @keyframes movimiento {
   from {
@@ -41,7 +42,7 @@
   margin: 0 0 0 -20em;
   position: relative;
   left: 23%;
-  top: 5%;
+  top: 0;
 }
 
 .buttonLoad {
@@ -54,10 +55,9 @@
   text-transform: uppercase;
   border-color: #afa59f;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
   background: linear-gradient(to right, rgb(124, 119, 115), rgb(223, 223, 29));
   position: relative;
-
+  top: 0.4em;
   right: 0%;
 }
 .buttonLoad:hover {
@@ -68,7 +68,6 @@
 }
 .select {
   position: relative;
-
   right: 26%;
 }
 .efectselect {
@@ -140,5 +139,19 @@
 }
 .imagenl {
   position: relative;
-  left: 30%;
+  left: 42%;
+}
+
+@media (max-width: 600px) {
+  .imagenl {
+    position: relative;
+    left: 17%;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    right: 0;
+  }
 }

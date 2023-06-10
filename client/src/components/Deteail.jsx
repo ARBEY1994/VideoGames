@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { GetDetail } from "../redux/actions";
 import imag from "./styles/imagenes/videojuegos.jpg";
-import imagel from "./styles/imagenes/Loading_icon.gif";
+
 import "./styles/detail.css";
 
 export default function VideoGameDetail() {
@@ -22,7 +22,7 @@ export default function VideoGameDetail() {
     return (
       <div>
         {" "}
-        <img src={imagel} alt="" />
+        <img src="" alt="" />
       </div>
     );
   }

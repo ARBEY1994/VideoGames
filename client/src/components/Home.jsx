@@ -14,9 +14,8 @@ import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
 import imag from "./styles/imagenes/videojuegos.jpg";
 import "./styles/home.css";
-import imagel from "./styles/imagenes/Loading_icon.gif";
 import logo from "./styles/imagenes/logo.png";
-
+import LoadingIcons from "react-loading-icons";
 export default function Home() {
   const dispatch = useDispatch();
 
@@ -144,7 +143,7 @@ export default function Home() {
             })
           ) : (
             <div className="imagenl">
-              <img src={imagel} alt="" />
+              <LoadingIcons.Bars />
             </div>
           )}
         </div>
