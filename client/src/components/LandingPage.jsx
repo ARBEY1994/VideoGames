@@ -9,9 +9,9 @@ export default function LandingPage() {
       <div>
         <img src={logo} alt="" />
       </div>
-      <p className="title">
+      <div className="title">
         <span>search your favorite video games</span>
-      </p>
+      </div>
       <div className="enter">
         <Link to="/Home">
           <button className="buttonLanding">let's go </button>

@@ -65,3 +65,15 @@ span {
   border-color: #77706e;
   box-shadow: 0 0 50px #77706e, 0 0 80px #77706e, 0 0 120px #77706e;
 }
+
+/* Estilos para pantallas con un ancho máximo de 600px */
+@media (max-width: 600px) {
+  .title {
+    text-align: center !important;
+    font-size: small !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+    left: 34% !important;
+  }
+}
